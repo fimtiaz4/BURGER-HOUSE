@@ -11,7 +11,7 @@
 
 .header{
 	background-image: url(../img/bg.png);
-	height: 100vh;
+	height: 120vh;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -288,7 +288,7 @@ b3 means third burger divition
 	display: flex;
 	color: #3d2514;
 	padding: 30px;
-	box-shadow: 110px 63px 153px -39px rgb(0,0,0,0.3);
+	box-shadow: 22px 39px 50px -16px rgb(0,0,0,0.3);
 }
 
 .slider .text{
@@ -390,7 +390,7 @@ b3 means third burger divition
 
 .newsletter{
 	text-align: center;
-	padding: 135px 0px 80px 0px;
+	padding: 200px 0px 80px 0px;
 
 }
 
@@ -410,10 +410,11 @@ b3 means third burger divition
     font-size: 49px;
     font-weight: 500;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .container4form{
-	width: 800px;
+	width: 770px;
 	margin: auto;
 }
 
@@ -422,87 +423,50 @@ b3 means third burger divition
 /*form row bottom margin*/
 
 
-
-/*
-f1 means from row divition
-fm1 means left form column
-fm2 means right first two input text column
-fm3 means submit button
-
-*/
-
-
-
-
 .f1{
-	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
-
-/*form border*/
-.fm1, .fm3{
-	border: none;
+.input_box{
+	width: 350px;
+    padding: 25px 0px 25px 18px;
+    margin: 25px 0px 0px 0px;
+    border: none;
 	border: 1px solid rgba(190, 190, 190);
     border-radius: 4px;
     background-color: transparent;
 }
 
-.fm2{
-	border: 1px solid rgba(190, 190, 190);
-}
-.fm2:hover{
-	transform: scale(1.01);
-	transition: 0.1s ease-in-out;
-}
-
-
-/*text input box size */
-.fm1, .fm3{
-	width: 318px;
-	padding: 25px;
-}
-
-.fm1::placeholder{
+.input_box::placeholder{
 	font-family: 'Bebas Neue', cursive;
 	font-size: 16px;
 }
 
-.fm3::placeholder{
-	font-family: 'Bebas Neue', cursive;
-	font-size: 16px;
-}
-
-/*middle space between two input*/
-.fm1{
-	margin-right: 10px;
-
-}
-
-
-
-.fm1:hover{
+.input_box:hover{
 	transform: scale(1.03);
 	transition: 0.3s ease-in-out;
 }
 
-.fm3:hover{
-	transform: scale(1.03);
-	transition: 0.3s ease-in-out;
-}
-
-/*submit button size*/
-.fm2{
-	width: 368px;
-	padding: 17px;
+.submit_box{
+	width: 372px;
+    padding: 16px 14px 16px 14px;
+    margin: 24px 0px 0px 0px;
     font-family: 'Alfa Slab One', cursive;
     background-color: #bf2222;
-    font-size: 27px;
+    font-size: 26px;
     letter-spacing: 2px;
     color: #ffffff;
     font-weight: 400;
     border: none;
     border-radius: 4px;
 }
+
+.submit_box:hover{
+	transform: scale(1.03);
+	transition: 0.3s ease-in-out;
+}
+
 
 
 
