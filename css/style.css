@@ -3,13 +3,6 @@
 	padding: 0px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-/*
-font-family: 'Alfa Slab One', cursive;
-font-family: 'Bebas Neue', cursive;
-font-family: 'Montserrat', sans-serif;
-*/
 
 .container{
 	width: 1320px;
@@ -18,10 +11,10 @@ font-family: 'Montserrat', sans-serif;
 
 .header{
 	background-image: url(../img/bg.png);
+	height: 100vh;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
 	margin-bottom: 85px;
 }
 
@@ -57,6 +50,7 @@ font-family: 'Montserrat', sans-serif;
 	margin-left: 10px;
 }
 
+
 .menu li{
 	text-decoration: none;
 	display: inline-block;
@@ -67,18 +61,22 @@ font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 }
 
-.menu ul li a{
+.menu a{
 	color: #3d2514;
 	text-decoration: none;
 	
-
 }
 
-.menu ul li:hover{
+.menu li:hover{
 	transform: scale(1.08);
 	transition: 0.1s ease-in-out;
 }
 
+
+/*navigation menu style start from here*/
+
+
+/**********banner start************/
 .bannar{
 	height: 90vh;
 	display: table-cell;
@@ -89,7 +87,7 @@ font-family: 'Montserrat', sans-serif;
 	font-family: 'Bebas Neue', cursive;
 	color: #3d2514;
 	border: 2px dashed #3d2514;
-	padding: 7px;
+	padding: 10px 18px;
 	text-transform: uppercase;
 	font-size: 22px;
 	display: inline;
@@ -112,6 +110,11 @@ font-family: 'Montserrat', sans-serif;
 	text-shadow: 4px 5px #fee8bc;
 }
 
+
+/**********banner end************/
+
+/*----------- 1st burger gallery start from here--------- */
+
 .section2{
 	margin-bottom: 75px;
 }
@@ -126,6 +129,11 @@ font-family: 'Montserrat', sans-serif;
 	justify-content: space-between;
 }
 
+/*  a21 means left side of 2nd section
+	a22 means right side of 2nd section
+	a22t means images of right side of 2nd section
+*/
+
 .a21{
 	margin-left: 50px;
 }
@@ -133,7 +141,13 @@ font-family: 'Montserrat', sans-serif;
 .a22{
 	margin-right: 50px;
 }
-.a21, .a22t, .a22t{
+
+.a22t{
+	margin-bottom: 33px;
+}
+
+
+.a21, .a22t{
 	position: relative;
 }
 
@@ -145,16 +159,13 @@ font-family: 'Montserrat', sans-serif;
 	left: 37px;
 }
 
-
-
 .a22t .image_desc{
 	position: absolute;
-	top: 10px;
+	top: 26px;
 	left: 28px;
 	color: #FFFFFF;
 	font-family: 'Bebas Neue', cursive;
 }
-
 
 .image_desc h3{
 	font-size: 23px;
@@ -166,12 +177,8 @@ font-family: 'Montserrat', sans-serif;
 	font-size: 34px;
 }
 
+/*******burger gallery for order start from here*********/
 
-
-
-.a22t{
-	margin-bottom: 33px;
-}
 
 .text{
 	text-align: center;
@@ -184,13 +191,12 @@ font-family: 'Montserrat', sans-serif;
     color: #3d2514;
     border: none;
     padding: 9px 18px;
-
 }
 
 .section3 .text h1{
 	font-family: 'Alfa Slab One', cursive;
 	color: #3d2514;
-	margin: 29px 0px 0px 0px;
+	margin: 32px 0px 16px 0px;
 	text-transform: uppercase;
 	font-size: 42px;
 	letter-spacing: 3px;
@@ -216,8 +222,15 @@ font-family: 'Montserrat', sans-serif;
 	transition: 0.1s ease-in-out;
 }
 
+/*
+b1 means first burger divition
+b2 means second burger divition
+b3 means third burger divition
+*/
+
 .b1{
-	margin-top: 42px;
+	margin-top: 63px;
+	margin-right: 13px;
 }
 
 .b2{
@@ -225,12 +238,8 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .b3{
-	margin-top: 40px;
-}
-
-.burgar_gallery button:hover{
-	transform: scale(1.05);
-	transition: 0.1s ease-in-out;
+	margin-top: 63px;
+	margin-left: 24px;
 }
 
 .burgar_gallery h1{
@@ -245,17 +254,35 @@ font-family: 'Montserrat', sans-serif;
 	margin-bottom: 29px;
     font-size: 16px;
 }
+
+/*order now button*/
 .burgar_gallery button{
 	font-family: 'Alfa Slab One', cursive;
 	color: #FFFFFF;
-    background-color: #BF2224;
-    padding: 11px 22px;
+    background-color: #BF2222;
+    padding: 14px 20px;
     font-size: 17px;
     border: none;
     cursor: pointer;
-
+    letter-spacing: 2px;
+    font-weight: 400;
 }
 
+.burgar_gallery button:hover{
+	transform: scale(1.05);
+	transition: 0.1s ease-in-out;
+}
+
+
+
+
+
+/*this is where  slider section begin*/
+
+.slider:hover{
+	transform: scale(1.02);
+	transition: .3s ease-in-out;
+}
 
 .section4 .slider{
 	display: flex;
@@ -291,30 +318,66 @@ font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	line-height: 30px;
 }
-
+/*yellow button*/
 .btn1{
 	background-color: #ffc045;
     width: 18px;
     height: 18px;
     border: none;
     border-radius: 100%;
-
+    margin: 16px 8px 16px 0px;
 }
 
+
+/*grey button*/
+.btn2{
+    background-color: #dcdcdc;
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 100%;
+    margin: 16px 8px 16px 0px;
+}
+
+.btn2:hover{
+	background-color: #dcdcdc;
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 100%;
+}
+
+.btn1:hover{
+	background-color: #ffc045;
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 100%;
+}
+
+
+/*btn1 and btn2 divition*/
 .slider_button{
 	margin-top: 75px;
 	cursor: pointer;
 }
 
-.btn2{
-	background-color: #dcdcdc;
-    width: 18px;
-    height: 18px;
-    border: none;
-    border-radius: 100%;
-    margin-left: 6px;
+.slider_button button:focus{
+	outline: 0px;
 }
 
+
+
+/*this is where  slider section begin*/
+
+
+
+
+/*this is where  newsletter section begin*/
+
+
+
+/*newsletter background image */
 .section5{
 	background-image: url(../img/5.png);
 	background-position: center;
@@ -353,10 +416,29 @@ font-family: 'Montserrat', sans-serif;
 	width: 800px;
 	margin: auto;
 }
+
+
+
 /*form row bottom margin*/
+
+
+
+/*
+f1 means from row divition
+fm1 means left form column
+fm2 means right first two input text column
+fm3 means submit button
+
+*/
+
+
+
+
 .f1{
 	margin-bottom: 20px;
 }
+
+
 /*form border*/
 .fm1, .fm3{
 	border: none;
@@ -380,17 +462,33 @@ font-family: 'Montserrat', sans-serif;
 	padding: 25px;
 }
 
-.fm1, .fm3::placeholder{
+.fm1::placeholder{
 	font-family: 'Bebas Neue', cursive;
-	font-size: 18px;
+	font-size: 16px;
+}
+
+.fm3::placeholder{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 16px;
 }
 
 /*middle space between two input*/
 .fm1{
 	margin-right: 10px;
+
 }
 
 
+
+.fm1:hover{
+	transform: scale(1.03);
+	transition: 0.3s ease-in-out;
+}
+
+.fm3:hover{
+	transform: scale(1.03);
+	transition: 0.3s ease-in-out;
+}
 
 /*submit button size*/
 .fm2{
@@ -407,6 +505,16 @@ font-family: 'Montserrat', sans-serif;
 }
 
 
+
+/*this is where newsletter section end*/
+
+
+
+
+/*this is where footer section begin*/
+
+
+
 .footer_bg{
 	background-image: url(../img/6.png);
 	background-position: center;
@@ -416,12 +524,8 @@ font-family: 'Montserrat', sans-serif;
 	
 }
 
-
-
-
 .footer_bg .top{
 	display: flex;
-
 }
 
 .footer_bg .top .left{
@@ -433,8 +537,6 @@ font-family: 'Montserrat', sans-serif;
 	width: 282px;
 	margin: 34px 0px;
 }
-
-
 
 .left p{
 	font-family: 'Montserrat', sans-serif;
